@@ -1,0 +1,58 @@
+# Metrics
+save_fig: False          # Output save
+save_entry_exit: False   # Save entry and exit points
+
+# Central Exchange
+# Exchange name [binance, bybit]
+exchange: "binance"
+# Market type [spot, futures]
+market_type: "futures"
+
+# Speed
+speed: 20                # Speed of simulation and backtest
+
+# Wallet Size
+margin_check: True
+balance: 100000           # Wallet size for backtest
+fee_percent: 0.0005    # Fee percent for backtest
+check_fee: True         # Check fee for backtest
+include_fee: True      # If the fee is being reflected as loss
+
+# Data Generation
+long_sim_count: 3       # Number of simulations to be performed on long
+short_sim_count: 3      # Number of simulations to be performed on short
+random_sim_count: 3       # Number of simulations to be performed on random
+min_day: 1              # Minimum number of days to be simulated 
+max_day: 5              # Maximum number of days to be simulated
+
+port: 50505              # Port number for backtest server
+
+# Survivorship bias settings
+survivorship_bias:
+  - delist_date: "2023-08-22"
+    news_date: "2023-08-15"
+    pair:
+      # - SNMBUSD
+      # - SRMBUSD
+      - YFIIUSDT
+    announcement_url: "https://www.binance.com/en/support/announcement/binance-will-delist-snm-srm-and-yfii-on-2023-08-22-f43511a4c1d347a8a2dd1efbdd2fe716"
+  - delist_date: "2023-04-18"
+    news_date: "2023-04-11"
+    pair:
+      # - QLCBTC
+      # - NEBLUSDT
+      - AUTOUSDT
+    announcement_url: "https://www.binance.com/en/support/announcement/binance-will-delist-qlc-nebl-and-auto-on-2023-04-18-27933fc8f6c8451fbb18c0189681441a"
+  - delist_date: "2023-03-24"
+    news_date: "2023-03-17"
+    pair:
+      - HNTBUSD
+      # - WABIBTC
+    announcement_url: "https://www.binance.com/en/support/announcement/binance-will-delist-hnt-and-wabi-on-2023-03-24-f1a8aa29692b4442a8f18be2076e14a0"
+  - delist_date: "2023-02-27"
+    news_date: "2023-02-20"
+    pair:
+      - AIONUSDT
+      # - MIRBUSD
+      # - ANCBUSD
+    announcement_url: "https://www.binance.com/en/support/announcement/binance-will-delist-aion-mir-anc-on-2023-02-27-b461bf1f04d9456ea978f1549a31e174"

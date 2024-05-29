@@ -1,0 +1,17 @@
+name: simtest
+channels:
+  - defaults
+dependencies:
+  - pandas
+  - numpy
+  - plotly
+  - wget
+  - matplotlib
+  - tqdm
+  - requests
+  - colorlog
+  - python=3.10
+  - ta-lib
+  - colorama
+  - pyyaml
+  - yaml
