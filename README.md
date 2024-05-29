@@ -145,7 +145,6 @@ To get started with SimTest, follow the instructions below:
 
 7. Refer to the project documentation for detailed information on how to run the simulations, perform backtesting, generate reports, and interpret the results.  
 
-For more detailed instructions, refer to the [documentation](docs/documentation/).  
 
 ## Contribution Guidelines
   
@@ -161,7 +160,6 @@ Contributions to SimTest are welcome! If you would like to contribute to the pro
 
 - Your pull request will be reviewed by the project maintainers, and any necessary feedback or adjustments will be provided.
 
-Please refer to the [contribution guidelines](docs/documentation/contributing.md) for more information.
 
 ## License
 
